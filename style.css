@@ -1,0 +1,140 @@
+/*--------------------------------------------------- ROOT */
+:root{
+  --cpl-color-pagebackground: #200000;
+  --cpl-color-red: #8F0D0D;
+  --cpl-color-darkred: #5B0000;
+  --cpl-color-section1: #DDDDDD;
+  --cpl-color-section2: #EEEEEE;
+}
+/*--------------------------------------------------- TAGS */
+body {
+  background-color: var(--cpl-color-pagebackground);
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  /*text-transform: uppercase;*/
+  color: var(--cpl-color-red);
+}
+
+/*--------------------------------------------------- GENERAL */
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.bg-coder{
+  background-image: url("images/BG_CodePNG24.png");
+}
+.bg-coderred{
+  background-image: url("images/BG_CodeRedPNG24.png");
+}
+
+/*--------------------------------------------------- PAGE */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.page-block {
+  background-color: var(--cpl-color-section1);
+}
+
+.page-block > p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  /*text-transform: uppercase;*/
+  color: var(--cpl-color-darkred);
+  width: 80%;
+  margin: auto;
+}
+
+.page-block:nth-child(even){
+  background-color: var(--cpl-color-section2);
+}
+
+/*--------------------------------------------------- BANNER */
+
+.banner-parent {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--cpl-color-darkred);
+  color: white;
+  min-height: 88px;
+}
+
+.banner-logo {
+  flex: 1;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.banner-contact{
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 2;
+  margin: auto;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.banner-underline{
+  margin: 0px;
+  width: 100%;
+  height: 8px;
+}
+/*--------------------------------------------------- CERTIFICATIONS */
+.certification-parent{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.certification-item{
+  margin: 8px;
+  flex-basis: 144px;
+  width: 144px;
+  height: 144px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.certification-image{
+  margin-top: 8px;
+  margin-left: 8px;
+}
+/*--------------------------------------------------- MARKETS */
+.market-parent{
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.market-item{
+  flex-basis: 128px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  /*text-transform: uppercase;*/
+  color: var(--cpl-color-red);
+  transition: transform .5s;
+}
+
+.market-item:hover{
+  transform: scale(1.2);
+}
+
+.market-image{
+  width: 96px;
+  height: 96px;
+}
