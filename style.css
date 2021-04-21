@@ -47,10 +47,22 @@ h1 {
   background-color: var(--cpl-color-section1);
 }
 
-.page-block > p {
-  font-family: 'Trebuchet MS', sans-serif;
+.page-block > ul {
+  font-family: 'Titillium Web', sans-serif;
+  text-rendering: optimizeLegibility;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
+  /*text-transform: uppercase;*/
+  color: var(--cpl-color-darkred);
+  width: 80%;
+  margin: auto;
+}
+
+.page-block > p {
+  font-family: 'Titillium Web', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  text-align: left;
   /*text-transform: uppercase;*/
   color: var(--cpl-color-darkred);
   width: 80%;
